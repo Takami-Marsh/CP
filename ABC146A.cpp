@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef long double ld;
+typedef vector<ll> vl;
+typedef vector<vl> vvl;
+typedef vector<ld> vd;
+typedef vector<vd> vvd;
+typedef vector<string> vs;
+
+int main()
+{
+  string S;
+  cin >> S;
+  vs s = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
+  for (ll i = 0; i < s.size(); i++)
+  {
+    if (S == s[i])
+    {
+      cout << 7 - i;
+      return 0;
+    }
+  }
+}
